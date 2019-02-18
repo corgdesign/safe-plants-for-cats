@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+  background: #000 url('tb.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input.search {
+  margin: 50vh auto -30px;
+  height: 70px;
+  width: 80%;
+  display: block;
+  position: relative;
+  top: -55px;
+  text-align: center;
+  outline: 0;
+  border: 10px solid #F7F7F7;
+  z-index: 2;
+  font-size: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.suggestions li {
+  background: #FFF;
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.hl {
+  background: lightgreen;
+}
+
+.toxic-hl .hl {
+    background: #ff7878;
+}
+
+.toxic {
+    margin-left: 20px;
+    flex: 0 0 70px;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    .toxic {
+        flex: 0 0 150px;
+    }
+}
+
+li .fas {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fa-check-circle {
+    color: rgb(61, 221, 61);
+}
+
+.fa-times-circle {
+    color: red;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    .wrapper {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .wrapper > div {
+        flex: 0 50%;
+        margin: 10vh 30px;
+        height: 80vh;
+        overflow: auto;
+    }
+
+}
+
+.title {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    color: #FFF;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.title .fas {
+    font-size: 20px;
+}
