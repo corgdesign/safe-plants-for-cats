@@ -137,6 +137,8 @@ li .fas {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.title .fas {
-    font-size: 20px;
+.title img {
+    width: 30px;
+    top: 7px;
+    position: relative;
 }
