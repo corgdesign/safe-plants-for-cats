@@ -30,7 +30,7 @@
         <img src="icon-white.png"> Safe Plants for Cats
     </div>
     <form class="search-form">
-        <input type="text" class="search" placeholder="Search for a plant...">
+        <input type="search" class="search" placeholder="Search for a plant...">
         <ul class="suggestions"></ul>
     </form>
 
@@ -70,6 +70,7 @@
 
         searchInput.addEventListener('change', displayMatches);
         searchInput.addEventListener('keyup', displayMatches);
+        searchInput.addEventListener('search', displayMatches);
 
         const form = document.querySelector('.search-form');
         form.addEventListener('submit', function (e) {
