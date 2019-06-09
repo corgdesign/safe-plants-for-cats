@@ -70,6 +70,13 @@ input.search {
   text-transform: capitalize;
 }
 
+.suggestions li.no-matches span {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
 .hl {
   background: lightgreen;
 }
